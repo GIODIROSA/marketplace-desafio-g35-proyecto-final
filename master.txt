@@ -1,4 +1,12 @@
-Desarrollo proyecto Desafio Latam. 
-Ana Castro
-Naldi Castro
-Giovanni Di Rosa
+Desarrollo proyecto Desafio Latam:
+ 
+* Ana Castro
+* Naldi Castro
+* Giovanni Di Rosa
+
+url: excel
+https://drive.google.com/drive/u/1/folders/1gc2tkCeix5T6acTEO5RJiOajtsqbc7P4
+
+url: repo / rama develop
+https://github.com/GIODIROSA/marketplace-desafio-g35-proyecto-final/tree/develop
+
