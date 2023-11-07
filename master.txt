@@ -1,6 +1,6 @@
 Desarrollo proyecto Desafio Latam:
  
-* Ana Castro
+* Ana Castro ready to push
 * Naldi Castro // prueba pull request (se borra si funciona)
 * Giovanni Di Rosa
 
