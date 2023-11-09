@@ -1,7 +1,7 @@
 Desarrollo proyecto Desafio Latam:
  
 * Ana Castro ready to push
-* Naldi Castro // prueba pull request (se borra si funciona)
+* Naldi Castro
 * Giovanni Di Rosa
 
 url: excel
