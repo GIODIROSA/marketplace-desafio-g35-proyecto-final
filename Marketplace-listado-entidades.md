@@ -74,8 +74,8 @@
 1. Un _usuario_ puede tener varios _productos_ (1 a m)
 2. Un _carrito compras_ pertenece a un _usuario_ (m a 1)
 3. Un _carrito compras_ puede tener muchos _productos_ (m a m a través de la entidad "detalle_carrito")
-4. Un _poster_ puede pertenecer a varias categorías (m a m)
-5. Un _detalle carrito_ pertenece a un _carrito compras_ y a un poster (1 a 1 a m)
+4. Un _producto_ puede pertenecer a varias categorías (m a m)
+5. Un _detalle carrito_ pertenece a un _carrito compras_ y a un producto (1 a 1 a m)
 6. Un _pedido_ pertenece a un usuario (m a 1)
 7. Un _pedido_ puede contener varios productos (m a m a través de la entidad "detalle_pedido")
 8. Un _usuario_ puede tener varios roles (1 a m)
@@ -100,12 +100,12 @@
 
 ### productos
 
-1. Crear el registro del poster
+1. Crear el registro del producto
 2. Leer el registro de un o varios productos dada la condición en particular
 3. Leer todos los registros de la entidad productos
-4. Actualizar los datos de un poster dada una condición particular
-5. Eliminar los datos de un poster dada una condición particular
-6. Cada poster debe tener un nombre unico en el sistema
+4. Actualizar los datos de un producto dada una condición particular
+5. Eliminar los datos de un producto dada una condición particular
+6. Cada producto debe tener un nombre unico en el sistema
 7. El precio de un producto debe ser un valor válido y no negativo
 8. La cantidad de stock de un producto no puede ser negativa
 
