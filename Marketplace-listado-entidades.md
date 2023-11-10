@@ -61,7 +61,7 @@
     detalle_pedido_id (PK)
     pedido_id (FK)
     producto_id (FK)
-    producto_precio_unitario (FK)
+    detalle_precio_unitario
     detalle_cantidad
 
 ### estado_pedido (EC)
