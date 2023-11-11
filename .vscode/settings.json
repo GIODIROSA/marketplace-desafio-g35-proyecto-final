@@ -73,6 +73,7 @@
     "_id": 6,
     "title": "Padre rico padre pobre",
     "isbn": "1933988312",
+    "stock": 20,
     "pageCount": 425,
     "publishedDate": {
         "$date": "1997-10-01T00:00:00.000-0700"
@@ -86,6 +87,7 @@
     "_id": 7,
     "title": "Cien años de soledad",
     "isbn": "1933988320",
+    "stock": 6,
     "pageCount": 560,
     "publishedDate": {
         "$date": "1967-12-01T00:00:00.000-0800"
@@ -99,6 +101,7 @@
     "_id": 8,
     "title": "El señor de los anillos",
     "isbn": "1933988797",
+    "stock": 16,
     "pageCount": 576,
     "publishedDate": {
         "$date": "1954-10-15T00:00:00.000-0700"
@@ -112,6 +115,7 @@
     "_id": 9,
     "title": "El codigo Da Vinci",
     "isbn": "1935182234",
+    "stock": 17,
     "pageCount": 454,
     "publishedDate": {
         "$date": "2003-06-04T00:00:00.000-0700"
@@ -125,6 +129,7 @@
     "_id": 10,
     "title": "La Iliada",
     "isbn": "193518217X",
+    "stock": 4,
     "pageCount": 1000,
     "publishedDate": {
         "$date": "1600-12-12T00:00:00.000-0800"
