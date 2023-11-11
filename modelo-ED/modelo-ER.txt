@@ -1,10 +1,11 @@
-CREATE TABLE productos(
+EATE TABLE productos(
     producto_id SERIAL PRIMARY KEY,
     producto_nombre VARCHAR(50) NOT NULL,
 	producto_imagen VARCHAR (255) NOT NULL,
     producto_descripcion VARCHAR (250) NOT NULL,
     producto_precio_unitario DECIMAL (10,2) NOT NULL,
-    producto_fecha_publicacion TIMESTAMP NOT NULL, 
+	producto_fecha_publicacion TIMESTAMP NOT NULL;
+	categoria_id SERIAL NOT NULL,
 	producto_autores VARCHAR (50) NOT NULL,
     producto_stock INT NOT NULL
 );
@@ -13,9 +14,6 @@ CREATE TABLE categorias(
     categoria_id SERIAL PRIMARY KEY,
     categoria_nombre VARCHAR(255)
 );
-
-SELECT * FROM productos;
-
 
 CREATE TABLE usuarios(
     usuario_id SERIAL PRIMARY KEY,
@@ -30,7 +28,6 @@ CREATE TABLE roles(
     rol_id SERIAL PRIMARY KEY,
     rol_nombre VARCHAR(50) NOT NULL
 );
-
 
 CREATE TABLE carrito_compras(
     carrito_compra_id SERIAL PRIMARY KEY,
@@ -62,7 +59,6 @@ CREATE TABLE pedido(
     FOREIGN kEY (estado_id) REFERENCES estado_pedido(estado_id)
 );
 
-
 CREATE TABLE detalle_pedido(
     detalle_pedido_id SERIAL PRIMARY KEY,
     pedido_id INTEGER NOT NULL,
@@ -73,23 +69,14 @@ CREATE TABLE detalle_pedido(
     detalle_precio_unitario NUMERIC(10, 2) DEFAULT 0.00 NOT NULL
 );
 
-
-
-
-SELECT * FROM detalle_pedido;
-
 ALTER TABLE productos
 ADD COLUMN categoria_id INTEGER,
 ADD CONSTRAINT fk_productos_categoria_productos
 FOREIGN KEY (categoria_id)
 REFERENCES categorias(categoria_id);
 
-SELECT * FROM productos;
-
 ALTER TABLE usuarios
 ADD COLUMN rol_id SERIAL,
 ADD CONSTRAINT fk_usuarios_roles_usuarios
 FOREIGN KEY (rol_id)
 REFERENCES roles(rol_id);
-
-SELECT * FROM usuarios;
