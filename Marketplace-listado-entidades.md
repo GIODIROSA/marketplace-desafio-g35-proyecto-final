@@ -11,6 +11,7 @@
     producto_precio_unitario
     producto_autores
     producto_stock
+    producto_fecha_publicacion
     categoria_id (FK)
 
 

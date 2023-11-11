@@ -1,1 +1,138 @@
-{}
+[
+    {
+    "_id": 1,
+    "title": "Unlocking Android",
+    "isbn": "1933988673",
+    "stock": 10,
+    "pageCount": 416,
+    "publishedDate": {
+        "$date": "2009-04-01T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/51Z8+Z3n6IL._AC_UF1000,1000_QL80_.jpg",
+    "shortDescription": "Unlocking Android es un libro que explora en profundidad el desarrollo de aplicaciones Android, cubriendo aspectos avanzados y estrategias para aprovechar al máximo la plataforma.",
+    "status": "PUBLISH",
+    "authors": ["W. Frank Ableson", "Charlie Collins", "Robi Sen"],
+    "categories": ["Programacion"]
+},{
+    "_id": 2,
+    "title": "Android in Action, Second Edition",
+    "isbn": "1935182722",
+    "stock": 5,
+    "pageCount": 592,
+    "publishedDate": {
+        "$date": "2011-01-14T00:00:00.000-0800"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/51JLqhpbneL._AC_UF1000,1000_QL80_.jpg",
+    "shortDescription": "Android in Action, Second Edition es un libro que aborda el desarrollo de aplicaciones Android, ofreciendo ejemplos prácticos y consejos útiles para programadores. ",
+    "status": "PUBLISH",
+    "authors": ["W. Frank Ableson", "Robi Sen"],
+    "categories": ["Programacion"]
+},{
+    "_id": 3,
+    "title": "Specification by Example",
+    "isbn": "1617290084",
+    "stock": 3,
+    "pageCount": 0,
+    "publishedDate": {
+        "$date": "2011-06-03T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781617290084/specification-by-example-9781617290084_hr.jpg",
+    "shortDescription": "Specification by Example de Gojko Adzic aborda la especificación ágil del software a través de la colaboración y pruebas de aceptación. Enfocado en la calidad y la comprensión compartida. ",
+    "status": "PUBLISH",
+    "authors": ["Gojko Adzic"],
+    "categories": ["Programacion"]
+},{
+    "_id": 4,
+    "title": "Don Quijote de la Mancha I",
+    "isbn": "1617290793",
+    "stock": 30,
+    "pageCount": 0,
+    "publishedDate": {
+        "$date": "1605-10-03T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://mestasediciones.com/storage/2020/06/C18-Don-Quijote-1.jpg",
+    "shortDescription": "Don Quijote de la Mancha - Parte 1 es una novela escrita por Miguel de Cervantes que sigue las aventuras del caballero Don Quijote y su fiel escudero Sancho Panza en un mundo lleno de idealismo y humor, publicada en 1605.",
+    "status": "PUBLISH",
+    "authors": ["Miguel de Cervantes"],
+    "categories": ["Novela"]
+},{
+    "_id": 5,
+    "title": "Harry Potter y el misterio del príncipe",
+    "isbn": "1935182420",
+    "stock": 13,
+    "pageCount": 600,
+    "publishedDate": {
+        "$date": "2005-11-15T00:00:00.000-0800"
+    },
+    "thumbnailUrl": "https://4.bp.blogspot.com/-Gstf39v_5Fk/VYcRdX1F3VI/AAAAAAAA17k/HEDty5lorwM/s1600/HarryPotterMisterioPrincipe.jpg",
+    "longDescription": "Harry Potter y el Misterio del Príncipe es el sexto libro de la serie Harry Potter escrita por J.K. Rowling. La historia sigue las aventuras del joven mago Harry Potter mientras se enfrenta a oscuros secretos y desafíos, incluyendo el descubrimiento de un misterioso libro de hechizos y la creciente amenaza del Señor Tenebroso, Lord Voldemort.",
+    "status": "PUBLISH",
+    "authors": ["J. K. Rowling"],
+    "categories": ["Novela"]
+},{
+    "_id": 6,
+    "title": "Padre rico padre pobre",
+    "isbn": "1933988312",
+    "pageCount": 425,
+    "publishedDate": {
+        "$date": "1997-10-01T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://www.penguinlibros.com/cl/1618304/padre-rico-padre-pobre-para-jovenes.jpg",
+    "longDescription": "Padre Rico, Padre Pobre es un libro escrito por Robert Kiyosaki que explora las diferencias en la mentalidad financiera entre su padre pobre (su padre biológico) y su padre rico (el padre de su mejor amigo). El libro ofrece consejos sobre educación financiera y la importancia de la inversión y los activos para lograr la independencia financiera.",
+    "status": "PUBLISH",
+    "authors": ["Robert Kiyosaki","Sharon Lechter"],
+    "categories": ["No ficcion"]
+},{
+    "_id": 7,
+    "title": "Cien años de soledad",
+    "isbn": "1933988320",
+    "pageCount": 560,
+    "publishedDate": {
+        "$date": "1967-12-01T00:00:00.000-0800"
+    },
+    "thumbnailUrl": "https://www.penguinlibros.com/cl/1777651/cien-anos-de-soledad-edicion-ilustrada.jpg",
+    "shortDescription": "Cien años de soledad es una novela escrita por Gabriel García Márquez que narra la historia de la familia Buendía a lo largo de varias generaciones en el ficticio pueblo de Macondo. La obra es un ejemplo destacado del realismo mágico y aborda temas como el amor, la soledad, la política y el paso del tiempo en un entorno mágico y surrealista.",
+    "status": "PUBLISH",
+    "authors": ["Gabriel García Marquez"],
+    "categories": ["Realismo magico"]
+},{
+    "_id": 8,
+    "title": "El señor de los anillos",
+    "isbn": "1933988797",
+    "pageCount": 576,
+    "publishedDate": {
+        "$date": "1954-10-15T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://www.sueñosdepapel.cl/cdn/shop/products/365688_portada_el-senor-de-los-anillos-ne-ilustrado-por-alan-lee_j-r-r-tolkien_202207111143.jpg?v=1672241640",
+    "shortDescription": "El Señor de los Anillos es una épica obra de fantasía escrita por J.R.R. Tolkien que narra la lucha contra el Señor Oscuro Sauron en la Tierra Media. La historia sigue a Frodo Bolsón y un grupo de personajes en su búsqueda para destruir un poderoso Anillo Único y enfrentar peligrosas aventuras en un mundo lleno de razas y criaturas mágicas.",
+    "status": "PUBLISH",
+    "authors": ["J. R. R. Tolkien"],
+    "categories": ["Novela"]
+},{
+    "_id": 9,
+    "title": "El codigo Da Vinci",
+    "isbn": "1935182234",
+    "pageCount": 454,
+    "publishedDate": {
+        "$date": "2003-06-04T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://jungladelasletras.files.wordpress.com/2017/02/portada_el-codigo-da-vinci-nueva-edicion_dan-brown_201607291100.jpg",
+    "shortDescription": "El Código Da Vinci es una novela escrita por Dan Brown que combina elementos de misterio, historia y conspiración en una trama que sigue al profesor Robert Langdon mientras resuelve acertijos en busca de un secreto religioso antiguo, mientras es perseguido por fuerzas misteriosas.",
+    "status": "PUBLISH",
+    "authors": ["Dan Brown"],
+    "categories": ["Thriller"]
+},{
+    "_id": 10,
+    "title": "La Iliada",
+    "isbn": "193518217X",
+    "pageCount": 1000,
+    "publishedDate": {
+        "$date": "1600-12-12T00:00:00.000-0800"
+    },
+    "thumbnailUrl": "https://cdn.culturagenial.com/es/imagenes/la-iliada-portada-cke.jpg",
+    "shortDescription": "La Ilíada es un poema épico escrito por el antiguo poeta griego Homero. Es un poema narrativo que relata los eventos y batallas durante el asedio de Troya por los griegos. Es una de las obras literarias más antiguas de la literatura occidental.",
+    "status": "PUBLISH",
+    "authors": ["Homero"],
+    "categories": ["Epopeya"]
+}
+]

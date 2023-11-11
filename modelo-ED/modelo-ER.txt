@@ -4,7 +4,8 @@ CREATE TABLE productos(
 	producto_imagen VARCHAR (255) NOT NULL,
     producto_descripcion VARCHAR (250) NOT NULL,
     producto_precio_unitario DECIMAL (10,2) NOT NULL,
-	producto_autores VARCHAR (50),
+    producto_fecha_publicacion TIMESTAMP NOT NULL, 
+	producto_autores VARCHAR (50) NOT NULL,
     producto_stock INT NOT NULL
 );
 
