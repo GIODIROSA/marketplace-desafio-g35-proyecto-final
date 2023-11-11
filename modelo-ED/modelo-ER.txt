@@ -1,0 +1,94 @@
+CREATE TABLE productos(
+    producto_id SERIAL PRIMARY KEY,
+    producto_nombre VARCHAR(50) NOT NULL,
+	producto_imagen VARCHAR (255) NOT NULL,
+    producto_descripcion VARCHAR (250) NOT NULL,
+    producto_precio_unitario DECIMAL (10,2) NOT NULL,
+	producto_autores VARCHAR (50),
+    producto_stock INT NOT NULL
+);
+
+CREATE TABLE categorias(
+    categoria_id SERIAL PRIMARY KEY,
+    categoria_nombre VARCHAR(255)
+);
+
+SELECT * FROM productos;
+
+
+CREATE TABLE usuarios(
+    usuario_id SERIAL PRIMARY KEY,
+    usuario_nombre VARCHAR(50) NOT NULL,
+    usuario_apellido VARCHAR (50) NOT NULL,
+    usuario_direccion VARCHAR (90) NOT NULL,
+    usuario_email VARCHAR (100) NOT NULL,
+    usuario_contrasenna VARCHAR (255) NOT NULL
+);
+
+CREATE TABLE roles(
+    rol_id SERIAL PRIMARY KEY,
+    rol_nombre VARCHAR(50) NOT NULL
+);
+
+
+CREATE TABLE carrito_compras(
+    carrito_compra_id SERIAL PRIMARY KEY,
+    usuario_id INTEGER NOT NULL,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id),
+    fecha_creacion TIMESTAMP NOT NULL
+);
+
+CREATE TABLE detalle_carrito(
+    detalle_carrito_id SERIAL PRIMARY KEY,
+    carrito_compra_id INTEGER NOT NULL,
+    FOREIGN KEY (carrito_compra_id) REFERENCES carrito_compras(carrito_compra_id),
+    producto_id INTEGER NOT NULL,
+    FOREIGN KEY (producto_id) REFERENCES productos(producto_id),
+    detalle_carrito_cantidad INT DEFAULT 0 NOT NULL
+);
+
+CREATE TABLE estado_pedido(
+    estado_id SERIAL PRIMARY KEY,
+    estado_descripcion VARCHAR(255)
+);
+
+CREATE TABLE pedido(
+    pedido_id SERIAL PRIMARY KEY,
+    usuario_id INTEGER NOT NULL,
+    FOREIGN kEY (usuario_id) REFERENCES usuarios(usuario_id),
+    pedido_fecha TIMESTAMP NOT NULL,
+    estado_id INTEGER NOT NULL,
+    FOREIGN kEY (estado_id) REFERENCES estado_pedido(estado_id)
+);
+
+
+CREATE TABLE detalle_pedido(
+    detalle_pedido_id SERIAL PRIMARY KEY,
+    pedido_id INTEGER NOT NULL,
+    FOREIGN KEY (pedido_id) REFERENCES pedido(pedido_id),
+    producto_id INTEGER NOT NULL,
+    FOREIGN KEY (producto_id) REFERENCES productos(producto_id),
+    detalle_cantidad INTEGER DEFAULT 0 NOT NULL,
+    detalle_precio_unitario NUMERIC(10, 2) DEFAULT 0.00 NOT NULL
+);
+
+
+
+
+SELECT * FROM detalle_pedido;
+
+ALTER TABLE productos
+ADD COLUMN categoria_id INTEGER,
+ADD CONSTRAINT fk_productos_categoria_productos
+FOREIGN KEY (categoria_id)
+REFERENCES categorias(categoria_id);
+
+SELECT * FROM productos;
+
+ALTER TABLE usuarios
+ADD COLUMN rol_id SERIAL,
+ADD CONSTRAINT fk_usuarios_roles_usuarios
+FOREIGN KEY (rol_id)
+REFERENCES roles(rol_id);
+
+SELECT * FROM usuarios;
