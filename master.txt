@@ -10,3 +10,6 @@ https://drive.google.com/drive/u/1/folders/1gc2tkCeix5T6acTEO5RJiOajtsqbc7P4
 url: repo / rama develop
 https://github.com/GIODIROSA/marketplace-desafio-g35-proyecto-final/tree/develop
 
+Documentacion: básica de postman
+url:
+https://documenter.getpostman.com/view/18692328/2s9YXk4MD5

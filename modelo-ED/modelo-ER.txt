@@ -32,7 +32,7 @@ CREATE TABLE roles(
 
 
 CREATE TABLE carrito_compras(
-    carrito_compra_id SERIAL PRIMARY KEY,
+    //falta id carrito_compra_id
     usuario_id INTEGER NOT NULL,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id),
     fecha_creacion TIMESTAMP NOT NULL
@@ -71,9 +71,6 @@ CREATE TABLE detalle_pedido(
     detalle_cantidad INTEGER DEFAULT 0 NOT NULL,
     detalle_precio_unitario NUMERIC(10, 2) DEFAULT 0.00 NOT NULL
 );
-
-
-
 
 SELECT * FROM detalle_pedido;
 
