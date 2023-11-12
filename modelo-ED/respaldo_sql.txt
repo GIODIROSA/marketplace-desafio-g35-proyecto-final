@@ -1,12 +1,11 @@
-EATE TABLE productos(
+CREATE TABLE productos(
     producto_id SERIAL PRIMARY KEY,
     producto_nombre VARCHAR(50) NOT NULL,
 	producto_imagen VARCHAR (255) NOT NULL,
     producto_descripcion VARCHAR (250) NOT NULL,
-    producto_precio_unitario DECIMAL (10,2) NOT NULL,
-	producto_fecha_publicacion TIMESTAMP NOT NULL;
-	categoria_id SERIAL NOT NULL,
-	producto_autores VARCHAR (50) NOT NULL,
+  
+	DECIMAL (10,2) NOT NULL,
+	producto_autores VARCHAR (50),
     producto_stock INT NOT NULL
 );
 
@@ -14,6 +13,7 @@ CREATE TABLE categorias(
     categoria_id SERIAL PRIMARY KEY,
     categoria_nombre VARCHAR(255)
 );
+
 
 CREATE TABLE usuarios(
     usuario_id SERIAL PRIMARY KEY,
@@ -29,12 +29,16 @@ CREATE TABLE roles(
     rol_nombre VARCHAR(50) NOT NULL
 );
 
+
 CREATE TABLE carrito_compras(
-    //falta id carrito_compra_id
     usuario_id INTEGER NOT NULL,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id),
     fecha_creacion TIMESTAMP NOT NULL
 );
+
+ALTER TABLE carrito_compras
+ADD COLUMN carrito_compra_id SERIAL PRIMARY KEY;
+
 
 CREATE TABLE detalle_carrito(
     detalle_carrito_id SERIAL PRIMARY KEY,
@@ -44,6 +48,7 @@ CREATE TABLE detalle_carrito(
     FOREIGN KEY (producto_id) REFERENCES productos(producto_id),
     detalle_carrito_cantidad INT DEFAULT 0 NOT NULL
 );
+
 
 CREATE TABLE estado_pedido(
     estado_id SERIAL PRIMARY KEY,
@@ -69,18 +74,59 @@ CREATE TABLE detalle_pedido(
     detalle_precio_unitario NUMERIC(10, 2) DEFAULT 0.00 NOT NULL
 );
 
-
-
-SELECT * FROM detalle_pedido;
-
 ALTER TABLE productos
 ADD COLUMN categoria_id INTEGER,
 ADD CONSTRAINT fk_productos_categoria_productos
 FOREIGN KEY (categoria_id)
 REFERENCES categorias(categoria_id);
 
+
 ALTER TABLE usuarios
 ADD COLUMN rol_id SERIAL,
 ADD CONSTRAINT fk_usuarios_roles_usuarios
 FOREIGN KEY (rol_id)
 REFERENCES roles(rol_id);
+
+INSERT INTO categorias (categoria_nombre)
+VALUES
+  ('Ficción'),
+  ('No Ficción'),
+  ('Misterio'),
+  ('Aventura'),
+  ('Ciencia Ficción'),
+  ('Romance'),
+  ('Historia'),
+  ('Biografía');
+
+
+INSERT INTO productos (producto_nombre, producto_imagen, producto_descripcion, producto_precio_unitario, producto_autores, producto_stock, categoria_id)
+VALUES
+  ('Cien años de soledad', 'imagen1.jpg', 'Una obra maestra de la literatura latinoamericana.', 19.99, 'Gabriel García Márquez', 50, 1),
+  ('1984', 'imagen2.jpg', 'Una novela distópica clásica.', 15.99, 'George Orwell', 30, 2),
+  ('Don Quijote de la Mancha', 'imagen3.jpg', 'La obra cumbre de la literatura española.', 24.99, 'Miguel de Cervantes', 40, 3),
+  ('Orgullo y prejuicio', 'imagen4.jpg', 'Una novela clásica de Jane Austen.', 18.50, 'Jane Austen', 25, 4),
+  ('Harry Potter y la piedra filosofal', 'imagen5.jpg', 'El inicio de la saga de Harry Potter.', 22.75, 'J.K. Rowling', 60, 5),
+  ('El señor de los anillos', 'imagen6.jpg', 'Una épica de fantasía de J.R.R. Tolkien.', 28.99, 'J.R.R. Tolkien', 35, 6),
+  ('Crónica de una muerte anunciada', 'imagen7.jpg', 'Una novela de García Márquez.', 17.25, 'Gabriel García Márquez', 45, 1),
+  ('Matar a un ruiseñor', 'imagen8.jpg', 'Un clásico de la literatura estadounidense.', 21.50, 'Harper Lee', 28, 4),
+  ('Drácula', 'imagen9.jpg', 'Una novela de horror gótico de Bram Stoker.', 20.75, 'Bram Stoker', 33, 7),
+  ('El Gran Gatsby', 'imagen10.jpg', 'Una obra maestra de la literatura estadounidense.', 19.80, 'F. Scott Fitzgerald', 22, 8);
+
+
+
+
+
+SELECT * FROM productos;
+SELECT * FROM categorias;
+SELECT * FROM usuarios;
+SELECT * FROM pedido;
+SELECT * FROM detalle_pedido;
+SELECT * FROM carrito_compras;
+SELECT * FROM roles;
+
+
+
+
+
+
+
