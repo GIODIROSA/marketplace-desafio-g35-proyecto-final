@@ -1,4 +1,4 @@
-EATE TABLE productos(
+CREATE TABLE productos(
     producto_id SERIAL PRIMARY KEY,
     producto_nombre VARCHAR(50) NOT NULL,
 	producto_imagen VARCHAR (255) NOT NULL,
