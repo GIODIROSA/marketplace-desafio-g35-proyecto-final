@@ -238,5 +238,65 @@
     "status": "PUBLISH",
     "authors": ["Cecilia Eudave", "Salvador Luis"],
     "categories": ["Novela"]
+},{
+    "_id": 17,
+    "title": "La lección de August",
+    "isbn": "9788418050299",
+    "stock": 20,
+    "precio": 5990,
+    "pageCount": 416,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "17laLeccionDeAugust.jpg",
+    "shortDescription": "Una preciosa edición ilustrada del éxito best seller ¡El fenómeno Wonder cumple 10 años! Su cara lo hace distinto y él solo quiere ser uno más. Camina siempre mirando al suelo, la cabeza gacha y el flequillo tratando en vano de esconder su rostro, pero, aun así, es objeto de miradas furtivas, susurros ahogados y codazos de asombro. August sale poco, su vida transcurre entre las acogedoras paredes de su casa, entre la compañía de su familia, su perra Daisy y las increíbles historias de La guerra de las galaxias.",    
+    "status": "PUBLISH",
+    "authors": ["R. J. Palacio"],
+    "categories": ["Infantil"]
+},{
+    "_id": 18,
+    "title": "El nuevo mund (almas perdidas 2)",
+    "isbn": "9789566184393",
+    "stock": 15,
+    "precio": 10990,
+    "pageCount": 336,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "18elNuevoMundo.jpg",
+    "shortDescription": "La nueva serie de amor y fantasía de la reina de Wattpad: Ariana Godoy. ¡La segunda parte de la trilogía Almas Perdidas ya está aquí! Ella es un vampiro convertido. Él es un vampiro purasangre. Ella aún se aferra a su humanidad, él es un asesino frío. Sus mundos son completamente diferentes, son enemigos naturales. ¿Qué pasará cuando sus caminos se crucen? ¿Y si para ella, él es la clave para descubrir la verdad?.",    
+    "status": "PUBLISH",
+    "authors": ["Ariana Godoy"],
+    "categories": ["Novela"]
+},{
+    "_id": 19,
+    "title": "Los amantes de Praga",
+    "isbn": "9789563603941",
+    "stock": 14,
+    "precio": 19990,
+    "pageCount": 344,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "19losAmantesDePraga.jpg",
+    "shortDescription": "En la Praga de los años treinta, Lenka, una joven estudiante de arte, se enamora perdidamente de Josef. Ambos se casan, pero, al igual que muchos otros compatriotas, sus sueños se hacen añicos ante la inminente invasión nazi y deciden huir a Estados Unidos. Sin embargo, en el último momento, Lenka decide quedarse en Praga. En Estados Unidos, Josef se convierte en un obstetra de éxito y rehace su vida. Sin embargo, nunca olvidará a su primer y único amor, al que cree haber perdido para siempre. Pero en Terezin y Auschwitz, Lenka sobrevivirá gracias a la memoria de un marido al que cree que no verá de nuevo y a su talento artístico. Décadas más tarde, un inesperado encuentro en Nueva York ofrece una segunda oportunidad a los amantes.",    
+    "status": "PUBLISH",
+    "authors": ["Alyson Richman"],
+    "categories": ["Ficcion"]
+},{
+    "_id": 20,
+    "title": "Terapia para llevar",
+    "isbn": "9788419501806",
+    "stock": 10,
+    "precio": 23990,
+    "pageCount": 144,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "20terapiaParaLlevar.jpg",
+    "shortDescription": "La salud mental no cae del cielo. Descubre 100 herramientasprácticas y fáciles de aplicar que mejorarán tu día a día.¿Estás desconectado de ti mismo? ¿Sientes que tepasa algo, pero no sabes qué es? ¿La opinión de losdemás te condiciona demasiado? Descubre 100herramientas prácticas y fáciles de aplicar para vivirmejor tu día a día. Aprende a relativizar, a evitar los pensamientos intrusivos y a poner límites que te hagansentir bien. Descubre cómo aumentar tu autoestima, dejar deprocrastinar y confiarmás en ti.",    
+    "status": "PUBLISH",
+    "authors": ["Ana Perez"],
+    "categories": ["Infantil"]
 }
 ]
