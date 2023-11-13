@@ -4,6 +4,7 @@
     "title": "Unlocking Android",
     "isbn": "1933988673",
     "stock": 10,
+    "precio": 12990,
     "pageCount": 416,
     "publishedDate": {
         "$date": "2009-04-01T00:00:00.000-0700"
@@ -18,6 +19,7 @@
     "title": "Android in Action, Second Edition",
     "isbn": "1935182722",
     "stock": 5,
+    "precio": 25000,
     "pageCount": 592,
     "publishedDate": {
         "$date": "2011-01-14T00:00:00.000-0800"
@@ -32,6 +34,7 @@
     "title": "Specification by Example",
     "isbn": "1617290084",
     "stock": 3,
+    "precio": 15000,
     "pageCount": 0,
     "publishedDate": {
         "$date": "2011-06-03T00:00:00.000-0700"
@@ -46,6 +49,7 @@
     "title": "Don Quijote de la Mancha I",
     "isbn": "1617290793",
     "stock": 30,
+    "precio": 34990,
     "pageCount": 0,
     "publishedDate": {
         "$date": "1605-10-03T00:00:00.000-0700"
@@ -60,6 +64,7 @@
     "title": "Harry Potter y el misterio del príncipe",
     "isbn": "1935182420",
     "stock": 13,
+    "precio": 19990,
     "pageCount": 600,
     "publishedDate": {
         "$date": "2005-11-15T00:00:00.000-0800"
@@ -74,6 +79,7 @@
     "title": "Padre rico padre pobre",
     "isbn": "1933988312",
     "stock": 20,
+    "precio": 14990,
     "pageCount": 425,
     "publishedDate": {
         "$date": "1997-10-01T00:00:00.000-0700"
@@ -88,6 +94,7 @@
     "title": "Cien años de soledad",
     "isbn": "1933988320",
     "stock": 6,
+    "precio": 19990,
     "pageCount": 560,
     "publishedDate": {
         "$date": "1967-12-01T00:00:00.000-0800"
@@ -102,6 +109,7 @@
     "title": "El señor de los anillos",
     "isbn": "1933988797",
     "stock": 16,
+    "precio": 29990,
     "pageCount": 576,
     "publishedDate": {
         "$date": "1954-10-15T00:00:00.000-0700"
@@ -116,6 +124,7 @@
     "title": "El codigo Da Vinci",
     "isbn": "1935182234",
     "stock": 17,
+    "precio": 14990,
     "pageCount": 454,
     "publishedDate": {
         "$date": "2003-06-04T00:00:00.000-0700"
@@ -130,6 +139,7 @@
     "title": "La Iliada",
     "isbn": "193518217X",
     "stock": 4,
+    "precio": 14990,
     "pageCount": 1000,
     "publishedDate": {
         "$date": "1600-12-12T00:00:00.000-0800"
