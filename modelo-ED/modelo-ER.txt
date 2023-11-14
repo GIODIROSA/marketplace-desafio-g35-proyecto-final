@@ -36,7 +36,7 @@ CREATE TABLE pedido(
 CREATE TABLE detalle_pedido(
     detalle_id SERIAL PRIMARY KEY,
     detalle_cantidad INTEGER DEFAULT 0 NOT NULL,
-    detalle_total INTEGER DEFAULT 0 NOT NULL
+    detalle_total INTEGER DEFAULT 0 NOT NULL,
     producto_id INTEGER NOT NULL,
     FOREIGN KEY (producto_id) REFERENCES productos(producto_id),
     producto_precio INTEGER NOT NULL,
