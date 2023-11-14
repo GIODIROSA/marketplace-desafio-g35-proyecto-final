@@ -8,11 +8,11 @@
     producto_nombre
     producto_imagen
     producto_descripcion
-    producto_precio_unitario
+    producto_precio
     producto_autores
     producto_stock
-    producto_fecha_publicacion
-    categoria_id (FK)
+    producto_categoria
+    producto_estado (se utilizará para la sección de Nuevos Lanzamientos)
 
 
 ### usuarios (ED)
@@ -21,54 +21,27 @@
     usuario_nombre
     usuario_apellido
     usuario_direccion
-    usuario_email
-    rol_id (FK)
-    usuario_contrasenna
-
-### roles (EC)
-
-    rol_id (PK)
-    rol_nombre
-
-
-### categorias (EC)
-
-    categoria_id (PK)
-    categoria_nombre
-
-### carrito_compras (ED) - (ET)
-
-    carrito_compra_id (PK)
-    fecha_creacion
-    usuario_id (FK)
-
-
-### detalle_carrito (EP)
-
-    detalle_carrito_id (PK)
-    carrito_compra_id (FK)
-    producto_id (FK)
-    detalle_carrito_cantidad
+    usuario_email (dato para el login)
+    usuario_contrasenna (dato para el login)
+    usuario_rol (dato para definición del permiso)
 
 ### pedido (ED)
 
     pedido_id (PK)
     pedido_fecha
+    pedido_medio_pago
+    pedido_total (total suma (todos los productos x respectivas cantidades))
     usuario_id (FK)
-    estado_id (FK)
+    pedido_estado (se utiliza para saber si el pedido está activo o no)
 
 ### detalle_pedido (EP)
 
-    detalle_pedido_id (PK)
+    detalle_id (PK)
+    detalle_cantidad
+    detalle_total (total producto x cantidad)
     pedido_id (FK)
     producto_id (FK)
-    detalle_precio_unitario
-    detalle_cantidad
-
-### estado_pedido (EC)
-
-    estado_id (PK)
-    estado_descripcion
+    producto_precio (FK)
 
 ## Relaciones
 
