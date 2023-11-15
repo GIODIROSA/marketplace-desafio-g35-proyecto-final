@@ -298,5 +298,470 @@
     "status": "PUBLISH",
     "authors": ["Ana Perez"],
     "categories": ["Infantil"]
+},{
+    "_id": 21,
+    "title": "El Principito",
+    "isbn": "9788426127882",
+    "stock": 32,
+    "precio": 9990,
+    "pageCount": 96,
+    "publishedDate": {
+        "$date": "1943-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "21elPrincipito.jpg",
+    "shortDescription": "El Principito es una novela corta escrita por Antoine de Saint-Exupéry. Publicada por primera vez en 1943, la historia sigue a un pequeño príncipe que viaja de un planeta a otro, encontrando personajes peculiares y aprendiendo valiosas lecciones sobre la vida y el amor. A través de su viaje, el autor aborda temas como la amistad, la soledad, la responsabilidad y la importancia de ver el mundo con ojos de niño. La narrativa poética y las ilustraciones originales del autor contribuyen a su encanto atemporal.",    
+    "status": "PUBLISH",
+    "authors": ["Antoine de Saint-Exupéry"],
+    "categories": ["Infantil"]
+},{
+    "_id": 22,
+    "title": "Fuego y Sangre",
+    "isbn": "9788445005898",
+    "stock": 24,
+    "precio": 32390,
+    "pageCount": 736,
+    "publishedDate": {
+        "$date": "2018-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "22fuegoYSangre.jpg",
+    "shortDescription": "Fuego y Sangre es una obra del autor George R. R. Martin, publicada en 2018. Este libro es una historia detallada y extensa sobre la historia de la dinastía Targaryen, una de las familias más destacadas en el universo de Canción de Hielo y Fuego, la serie de novelas de fantasía épica de Martin que inspiró la famosa serie de televisión Juego de Tronos. La narrativa abarca desde la llegada de los Targaryen a Poniente hasta los eventos previos a la serie principal, explorando intrigas, traiciones y, como sugiere el título, momentos de fuego y sangre.",    
+    "status": "PUBLISH",
+    "authors": ["George R. R. Martin"],
+    "categories": ["Novela"]
+},{
+    "_id": 23,
+    "title": "To Sleep in a Sea of Stars",
+    "isbn": "9781250305455",
+    "stock": 6,
+    "precio": 42000,
+    "pageCount": 880,
+    "publishedDate": {
+        "$date": "2020-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "23toSleepOnASea",
+    "shortDescription": "To Sleep in a Sea of Stars es una novela de ciencia ficción escrita por Christopher Paolini, conocido por su serie El Ciclo de la Herencia. Publicada en 2020, la historia sigue a Kira Navares, una científica que hace un descubrimiento extraordinario durante una misión en un planeta alienígena. Este hallazgo la lleva a verse envuelta en eventos cósmicos y conflictos intergalácticos mientras lucha por comprender y sobrevivir en un universo vasto y misterioso. La obra combina elementos de exploración espacial, descubrimientos científicos y dilemas morales, creando una epopeya que mezcla lo épico y lo íntimo.",    
+    "status": "PUBLISH",
+    "authors": ["Christopher Paolini"],
+    "categories": ["Novela"]
+},{
+    "_id": 24,
+    "title": "Panteon",
+    "isbn": "9788445012918",
+    "stock": 3,
+    "precio": 22000,
+    "pageCount": 544,
+    "publishedDate": {
+        "$date": "2022-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "24panteon.jpg",
+    "shortDescription": "La Tierra, el planeta original, explotó hace algo más de diez mil años. Por aquel entonces el hombre ya había iniciado su periplo por el espacio. En esta nueva Era, la guerra y la paz son elementos de una misma balanza que se equilibran cuidadosamente desde La Colonia, el enclave científico por excelencia. Desde allí, la controladora Maralda Tardes detecta actividad blica en unplaneta alejado de cualquier ruta comercial, y decide iniciar un protocolo estándar de inspección",    
+    "status": "PUBLISH",
+    "authors": ["Carlos Sisí"],
+    "categories": ["Ficcion"]
+},{
+    "_id": 25,
+    "title": "Pesadillas electromagnéticas",
+    "isbn": "9788419035233",
+    "stock": 10,
+    "precio": 24000,
+    "pageCount": 352,
+    "publishedDate": {
+        "$date": "1935-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "25pesadillasElectromagneticas.jpg",
+    "shortDescription": "Invasiones alienígenas, transhumanismo, viajes espaciales, control mental, teletransportación… son solo algunos de los temas que Unno explora en estos doce relatos psicotrónicos publicados entre 1928 y 1939, doce historias que muestran la sorprendente imaginería de la cultura popular japonesa en la década anterior a la II Guerra Mundial, donde géneros propios como el ero-guro-nonsense adaptaron a su distorsionada manera las corrientes llegadas desde Occidente a través del cine y de la literatura.",  
+    "status": "PUBLISH",
+    "authors": ["Juza Unno"],
+    "categories": ["Ficcion"]
+},{
+    "_id": 26,
+    "title": "Orgullo y prejuicio",
+    "isbn": "9788467027280",
+    "stock": 12,
+    "precio": 16990,
+    "pageCount": 448,
+    "publishedDate": {
+        "$date": "1813-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "25orgulloYPrejuicio.jpg",
+    "shortDescription": " Orgullo y Prejuicio es una novela clásica escrita por Jane Austen y publicada por primera vez en 1813. La historia sigue a Elizabeth Bennet, una joven ingeniosa y llena de vida, mientras navega por las complejidades de la sociedad británica del siglo XIX. La trama se centra en su relación con el orgulloso y apuesto Sr. Darcy. La novela es conocida por su aguda crítica social, su ingenio y su exploración de temas como el amor, el matrimonio, el orgullo y los prejuicios.",    
+    "status": "PUBLISH",
+    "authors": ["Jane Austen"],
+    "categories": ["Novela"]
+},{
+    "_id": 27,
+    "title": "El jardín secreto",
+    "isbn": "9788497541687",
+    "stock": 24,
+    "precio": 13000,
+    "pageCount": 288,
+    "publishedDate": {
+        "$date": "1911-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "27elJardinSecreto.jpg",
+    "shortDescription": "El Jardín Secreto es una novela escrita por Frances Hodgson Burnett y publicada por primera vez en 1911. La historia sigue a Mary Lennox, una niña malhumorada y mimada que queda huérfana y es enviada a vivir con su tío en una mansión en Yorkshire, Inglaterra. Mientras explora la propiedad, Mary descubre un misterioso jardín que ha estado cerrado durante años. Junto con nuevos amigos, incluyendo a un niño llamado Colin, Mary trabaja para restaurar el jardín, lo que tiene efectos transformadores en sus vidas.",    
+    "status": "PUBLISH",
+    "authors": ["Frances Hodgson Burnett"],
+    "categories": ["Infantil"]
+},{
+    "_id": 28,
+    "title": "Lo que el viento se llevó",
+    "isbn": "9788497543469",
+    "stock": 8,
+    "precio": 31990,
+    "pageCount": 960,
+    "publishedDate": {
+        "$date": "1936-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "28loQueElVientoSeLlevo.jpg",
+    "shortDescription": "Lo que el viento se llevó es una novela escrita por Margaret Mitchell y publicada en 1936. La historia tiene lugar en el sur de los Estados Unidos durante y después de la Guerra Civil, y sigue la vida de Scarlett O'Hara, una joven sureña obstinada y apasionada. La novela aborda temas como el amor, la guerra, la pérdida, y la reconstrucción de la vida en medio de circunstancias cambiantes. Es conocida por ser una épica romántica y por su representación detallada de la sociedad sureña en esa época.",    
+    "status": "PUBLISH",
+    "authors": ["Margaret Mitchell"],
+    "categories": ["Novela"]
+},{
+    "_id": 29,
+    "title": "El Cuco de cristal",
+    "isbn": "9788491293552",
+    "stock": 20,
+    "precio": 26990,
+    "pageCount": 488,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "29elCucoDeCristal.jpg",
+    "shortDescription": "¿ESTÁS PREPARADO PARA ARRIESGAR TU CORAZÓN? Vuelve Javier Castillo MAGNÉTICA - SALVAJE - MONUMENTAL - TREPIDANTE El regreso más esperado MÁS DE 1.700.000 EJEMPLARES VENDIDOS Un trasplante de urgencia Un donante lleno de secretos ¿Qué esconden los latidos de tu corazón? Nueva York, 2017. Cora Merlo, médico residente de primer año, sufre un infarto fulminante que la obliga a un trasplante de corazón. Aún convaleciente la joven recibe la visita de una extraña mujer con una enigmática oferta: pasar unos días en Steelville, un pequeño pueblo de interior, para conocer la vida de su hijo Charles, el donante de su corazón. Cora se adentra así en un hogar lleno de secretos, en un misterio que se extiende durante veinte años y en un pueblo hermético en el que, justo el día de su llegada, desaparece un bebé en un parque público.",    
+    "status": "PUBLISH",
+    "authors": ["Javier Castillo"],
+    "categories": ["Novela"]
+},{
+    "_id": 30,
+    "title": "Volver a empezar",
+    "isbn": "9789564082912",
+    "stock": 21,
+    "precio": 15000,
+    "pageCount": 384,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "30volverAEmpezar.jpg",
+    "shortDescription": "Todo final tiene un principio. Y todo empezó con Atlas. La esperada continuación de Romper el círculo (It Ends with Us). Colleen Hoover te romperá el corazón. La esperada continuación de Romper el círculo (It Ends with Us). Lily y su exmarido, Ryle, acaban de pactar la custodia compartida de su niña cuando Lily se encuentra de nuevo con su primer amor, Atlas. Después de casi dos años separados, está entusiasmada porque, por una vez, el tiempo está de su lado, e inmediatamente dice que sí cuando Atlas le pide una cita. Pero su alegría se desvanece cuando piensa que, aunque ya no están casados, Ryle sigue teniendo un papel en la familia, y no consentirá que Atlas Corrigan esté presente en su vida y en la de su hija. Volver a empezar alterna entre las perspectivas de Lily y Atlas y continúa justo donde nos dejó Romper el círculo. Descubriremos más sobre el pasado de Atlas y seguiremos a Lily en busca de una segunda oportunidad de encontrar el amor verdadero mientras tiene que lidiar con un exmarido celoso",    
+    "status": "PUBLISH",
+    "authors": ["Colleen Hoover"],
+    "categories": ["Ficcion"]
+},{
+    "_id": 31,
+    "title": "El viento conoce mi nombre",
+    "isbn": "9789562626507",
+    "stock": 26,
+    "precio": 18000,
+    "pageCount": 352,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "31elVientoConoce.jpg",
+    "shortDescription": "Viena, 1938. Samuel Adler es un niño judío cuyo padre desaparece durante la Noche de los Cristales Rotos, en la que su familia lo pierde todo. Su madre, desesperada, le consigue una plaza en un tren que le llevará desde la Austria nazi hasta Inglaterra. Samuel emprende una nueva etapa con su fiel violín y con el peso de la soledad y la incertidumbre, que lo acompañarán siempre.",    
+    "status": "PUBLISH",
+    "authors": ["Isabel Allende"],
+    "categories": ["Novela"]
+},{
+    "_id": 32,
+    "title": "Como (no) escribí nuestra historia",
+    "isbn": "9789566190158",
+    "stock": 16,
+    "precio": 20000,
+    "pageCount": 544,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "32comoNoEscribi.jpg",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": ["Elisabet Benavent"],
+    "categories": ["Novela"]
+},{
+    "_id": 33,
+    "title": "Indira",
+    "isbn": "9788418897825",
+    "stock": 10,
+    "precio": 23000,
+    "pageCount": 416,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "33indira.jpg",
+    "shortDescription": "Indira Ramos en la mayor encrucijada de su carrera. «Thrillers de los de taquicardia . -Juan Carlos Galindo, El País Para la inspectora Indira Ramos ha sido un año repleto de sucesos: cazó a un monstruo al que todo el mundo daba por muerto, perdió a uno de sus mejores agentes en un desgraciado accidente y tuvo que elegir entre los dos hombres de su vida. Pero, cuando todo parecía haber vuelto a la normalidad y se presentaba ante ella una etapa tranquila, la vida se empeña en ponerle las cosas más difíciles que nunca y tendrá que enfrentarse, junto al inspector Iván Moreno, a un caso que les unirá o les separará para siempre. Su equipo -ahora compuesto por la subinspectora María Ortega, por una agente Lucía Navarro más taciturna de lo habitual tras su rehabilitación y por Jotadé, un oficial de origen gitano de métodos poco ortodoxos pero efectivos que pondrá patas arriba la vida de sus compañeros- tiene que investigar el hallazgo de varios cadáveres en un solar en construcción.",    
+    "status": "PUBLISH",
+    "authors": ["Santiago Díaz"],
+    "categories": ["Novela"]
+},{
+    "_id": 34,
+    "title": "La chica de nieve",
+    "isbn": "9788491292661",
+    "stock": 3,
+    "precio": 16990,
+    "pageCount": 450,
+    "publishedDate": {
+        "$date": "2020-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "34laChicaDeNieve.jpg",
+    "shortDescription": "El thriller perfecto que cambia las reglas del género. Más de 80 mil ejemplares vendidos. El desfile de Acción de Gracias más famoso del planeta. Una niña de tres años desaparecida. Dónde está Kiera Templeton? Nueva York, 1998, cabalgata de Acción de Gracias. Kiera Templeton, de tan solo tres años, desaparece entre la multitud. Tras una búsqueda frenética por toda la ciudad, alguien encuentra unos mechones de pelo junto a la ropa que llevaba puesta la pequeña. En 2003, el día que hubiese sido el octavo cumpleaños de Kiera, sus padres, Aaron y Grace Templeton, reciben en casa un extraño paquete con algo inesperado: una cinta de vídeo VHS con una grabación de un minuto de Kiera, jugando en una habitación desconocida. ",    
+    "status": "PUBLISH",
+    "authors": ["Javier Castillo"],
+    "categories": ["Novela"]
+},{
+    "_id": 35,
+    "title": "El manuscrito",
+    "isbn": "9789566129028",
+    "stock": 2,
+    "precio": 11990,
+    "pageCount": 320,
+    "publishedDate": {
+        "$date": "2021-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "35elManuscrito.jpg",
+    "shortDescription": "Cuando un huracán arrasa Camino Island, en la costa de Florida, una de las víctimas es el autor de thriller Nelson Kerr. El librero Bruce Cable sospecha que la tormenta no fue la causa de la muerte de Nelson y comienza a preguntarse si algunos oscuros personajes de las novelas de su amigo podrían ser más reales que ficticios. En algún lugar de su computador está el manuscrito de su nuevo libro, ¿podría encontrarse allí la clave del caso? Pero lo que esconden sus líneas es más impactante que cualquiera de los giros de las tramas de Nelson... y mucho más peligroso",    
+    "status": "PUBLISH",
+    "authors": ["John Grisham"],
+    "categories": ["Ficcion"]
+},{
+    "_id": 36,
+    "title": "Front-end Developer Handbook 2019",
+    "isbn": "978956612902X",
+    "stock": 3,
+    "precio": 36990,
+    "pageCount": 277,
+    "publishedDate": {
+        "$date": "2019-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "36frontendDeveloper.jpg",
+    "shortDescription": "Esta es una guía que todos pueden utilizar para aprender sobre la práctica del desarrollo front-end. Describe y analiza ampliamente la práctica de la ingeniería front-end: cómo aprenderla y qué herramientas se utilizan al practicarla en 2019.",    
+    "status": "PUBLISH",
+    "authors": ["Cody Lindley"],
+    "categories": ["Programacion"]
+},{
+    "_id": 37,
+    "title": "Oliver y Max",
+    "isbn": "9788415594383",
+    "stock": 5,
+    "precio": 8000,
+    "pageCount": 224,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "34oliverYMax.jpg",
+    "shortDescription": "a emotiva historia de un padre que lucha por recuperar al hijoque tuvo que abandonar en un orfanato. A sus ocho años,Oliver no recuerda otra cosa que el ruido de las sirenas y el zumbidode los aviones sobrevolando el cielo de un Berlín devastado. Su madretrabaja como enfermera del hospital de la Charité y se muestra cadavez más crítica con los valores del régimen, mientras que su padre,Max, es cocinero del Reich y parece no advertir la magnitud del horror nazi. Una tarde, cuando Oliver y su madre regresan a casa, unaexplosión divide irremediablemente sus destinos...",    
+    "status": "PUBLISH",
+    "authors": ["Angela Armero"],
+    "categories": ["Infantil"]
+},{
+    "_id": 38,
+    "title": "Donde está Wally, resolviendo el misterio",
+    "isbn": "9788417921194",
+    "stock": 7,
+    "precio": 23990,
+    "pageCount": 96,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "38dondeEstaWally.jpg",
+    "shortDescription": "¿Dónde está Wally? ¡Resuelve el misterio! Un entretenido libro de actividades y juegos para disfrutar del personaje más enigmático de todos los tiempos. Diviértete con las actividades más sorprendentes que puedas imaginar. El complemento perfecto para tus viajes. ¡Un libro repleto de búsquedas, rompecabezas y sorprendentes actividades! Además, encontrarás páginas extraíbles con las que crear figuras de papel sin utilizar tijeras ni pegamento. La diversión nunca se detiene con ¿DÓNDE ESTÁ WALLY?",    
+    "status": "PUBLISH",
+    "authors": ["Martin Handford"],
+    "categories": ["Infantil"]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
+},{
+    "_id": ,
+    "title": "",
+    "isbn": "",
+    "stock": ,
+    "precio": ,
+    "pageCount": ,
+    "publishedDate": {
+        "$date": "2023-10-12T00:00:00.000-0800"
+    },
+    "imgProduct": "",
+    "shortDescription": "",    
+    "status": "PUBLISH",
+    "authors": [""],
+    "categories": [""]
 }
 ]
