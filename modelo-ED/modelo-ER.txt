@@ -42,6 +42,14 @@ CREATE TABLE detalle_pedido(
     FOREIGN KEY (producto_id) REFERENCES productos(producto_id)
 );
 
+CREATE TABLE favoritos (
+    id_favoritos SERIAL PRIMARY KEY,
+    producto_favorito BOOLEAN DEFAULT false,
+    producto_id INTEGER NOT NULL,
+    FOREIGN KEY (producto_id) REFERENCES productos(producto_id),
+    usuario_id INTEGER NOT NULL,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id)
+);
 
 INSERT INTO productos (producto_nombre, producto_imagen, producto_descripcion, producto_precio, producto_categoria, producto_autores, producto_stock, producto_estado)
 VALUES('Unlocking Android', 'uploads\01unlockingAndroid.jpg', 'Unlocking Android es un libro que explora en profundidad el desarrollo de aplicaciones Android, cubriendo aspectos avanzados y estrategias para aprovechar al máximo la plataforma.', 12990, 'Programacion', 'W. Frank Ableson, Charlie Collins, Robi Sen', 10, false),
