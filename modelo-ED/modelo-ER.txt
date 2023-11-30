@@ -14,19 +14,18 @@ CREATE TABLE productos(
 
 CREATE TABLE usuarios(
     usuario_id SERIAL PRIMARY KEY,
-    usuario_nombre VARCHAR(50) NOT NULL,
-    usuario_apellido VARCHAR (50) NOT NULL,
-    usuario_direccion VARCHAR (90) NOT NULL,
-    usuario_email VARCHAR (100) NOT NULL,
-    usuario_contrasenna VARCHAR (255) NOT NULL,
-    usuario_rol VARCHAR(50) NOT NULL
+    nombre VARCHAR(50) NOT NULL,
+    apellido VARCHAR (50) NOT NULL,
+    direccion VARCHAR (90) NOT NULL,
+    email VARCHAR (100) NOT NULL,
+    password VARCHAR (255) NOT NULL,
+    rol VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE pedido(
     pedido_id SERIAL PRIMARY KEY,
     pedido_fecha TIMESTAMP NOT NULL,
-    pedido_medio_pago VARCHAR (255) NOT NULL,
-    pedido_total INTEGER NOT NULL,
+    pedido_total VARCHAR (255) NOT NULL,
     usuario_id INTEGER NOT NULL,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id),
     pedido_estado BOOLEAN NOT NULL
@@ -36,35 +35,27 @@ CREATE TABLE pedido(
 CREATE TABLE detalle_pedido(
     detalle_id SERIAL PRIMARY KEY,
     detalle_cantidad INTEGER DEFAULT 0 NOT NULL,
-    detalle_total INTEGER DEFAULT 0 NOT NULL,
-	detalle_precio_producto INTEGER NOT NULL,
+    detalle_precio INTEGER DEFAULT 0 NOT NULL,
     producto_id INTEGER NOT NULL,
+   	pedido_id INTEGER NOT NULL,
     FOREIGN KEY (producto_id) REFERENCES productos(producto_id)
 );
 
-CREATE TABLE favoritos (
-    id_favoritos SERIAL PRIMARY KEY,
-    producto_favorito BOOLEAN DEFAULT false,
-    producto_id INTEGER NOT NULL,
-    FOREIGN KEY (producto_id) REFERENCES productos(producto_id),
-    usuario_id INTEGER NOT NULL,
-    FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id)
-);
 
 INSERT INTO productos (producto_nombre, producto_imagen, producto_descripcion, producto_precio, producto_categoria, producto_autores, producto_stock, producto_estado)
 VALUES('Unlocking Android', 'uploads\01unlockingAndroid.jpg', 'Unlocking Android es un libro que explora en profundidad el desarrollo de aplicaciones Android, cubriendo aspectos avanzados y estrategias para aprovechar al máximo la plataforma.', 12990, 'Programacion', 'W. Frank Ableson, Charlie Collins, Robi Sen', 10, false),
 ('Android in Action, Second Edition', 'uploads\02androidInAction.jpg', 'Android in Action, Second Edition es un libro que aborda el desarrollo de aplicaciones Android, ofreciendo ejemplos prácticos y consejos útiles para programadores.', 25000, 'Programacion', 'W. Frank Ableson, Robi Sen', 5, false),
 ('Specification by Example', 'uploads\03specificationByExample.jpg', 'Specification by Example de Gojko Adzic aborda la especificación ágil del software a través de la colaboración y pruebas de aceptación. Enfocado en la calidad y la comprensión compartida.', 15000, 'Programacion', 'Gojko Adzic', 3, false),
 ('Don Quijote de la Mancha I', 'uploads\04donQuijoteDeLaManchaI.jpg', 'Don Quijote de la Mancha - Parte 1 es una novela escrita por Miguel de Cervantes que sigue las aventuras del caballero Don Quijote y su fiel escudero Sancho Panza en un mundo lleno de idealismo y humor, publicada en 1605.', 34990, 'Novela', 'Miguel de Cervantes', 30, false),
-('Harry Potter y el misterio del príncipe', 'uploads\05harryPotterMisterioPrincipe.jpj', 'Harry Potter y el Misterio del Príncipe es el sexto libro de la serie Harry Potter escrita por J.K. Rowling. La historia sigue las aventuras del joven mago Harry Potter mientras se enfrenta a oscuros secretos y desafíos, incluyendo el descubrimiento de un misterioso libro de hechizos y la creciente amenaza del Señor Tenebroso, Lord Voldemort.', 19990, 'Novela', 'J. K. Rowling', 13, false),
+('Harry Potter y el misterio del príncipe', 'uploads\05harryPotterMisterioPrincipe.jpg', 'Harry Potter y el Misterio del Príncipe es el sexto libro de la serie Harry Potter escrita por J.K. Rowling. La historia sigue las aventuras del joven mago Harry Potter mientras se enfrenta a oscuros secretos y desafíos, incluyendo el descubrimiento de un misterioso libro de hechizos y la creciente amenaza del Señor Tenebroso, Lord Voldemort.', 19990, 'Novela', 'J. K. Rowling', 13, false),
 ('Padre rico padre pobre', 'uploads\06padreRicoPadreProbre.jpg', 'Padre Rico, Padre Pobre es un libro escrito por Robert Kiyosaki que explora las diferencias en la mentalidad financiera entre su padre pobre (su padre biológico) y su padre rico (el padre de su mejor amigo). El libro ofrece consejos sobre educación financiera y la importancia de la inversión y los activos para lograr la independencia financiera.', 14990, 'Novela', 'Robert Kiyosaki, Sharon Lechter', 20, false),
 ('Cien años de soledad', 'uploads\07cienAnnosDeSoledad.jpg', 'Cien años de soledad es una novela escrita por Gabriel García Márquez que narra la historia de la familia Buendía a lo largo de varias generaciones en el ficticio pueblo de Macondo. La obra es un ejemplo destacado del realismo mágico y aborda temas como el amor, la soledad, la política y el paso del tiempo en un entorno mágico y surrealista.', 19990, 'Novela', 'Gabriel García Marquez', 6, false),
 ('El señor de los anillos', 'uploads\08elSennorDeLosAnillos.jpg', 'El Señor de los Anillos es una épica obra de fantasía escrita por J.R.R. Tolkien que narra la lucha contra el Señor Oscuro Sauron en la Tierra Media. La historia sigue a Frodo Bolsón y un grupo de personajes en su búsqueda para destruir un poderoso Anillo Único y enfrentar peligrosas aventuras en un mundo lleno de razas y criaturas mágicas.', 29990, 'Novela', 'J. R. R. Tolkien', 16, false),
 ('El codigo Da Vinci', 'uploads\09elCodigoDaVinci.jpg', 'El Código Da Vinci es una novela escrita por Dan Brown que combina elementos de misterio, historia y conspiración en una trama que sigue al profesor Robert Langdon mientras resuelve acertijos en busca de un secreto religioso antiguo, mientras es perseguido por fuerzas misteriosas.', 14990, 'Novela', 'Dan Brown', 17, false),
 ('La Iliada', 'uploads\10laIliada.jpg', 'La Ilíada es un poema épico escrito por el antiguo poeta griego Homero. Es un poema narrativo que relata los eventos y batallas durante el asedio de Troya por los griegos. Es una de las obras literarias más antiguas de la literatura occidental.', 14990, 'Novela', 'Homero', 4, false),
 ('Aura', 'uploads\11aura.jpg', 'Aura es una novela escrita por el autor mexicano Carlos Fuentes. La historia es un relato de misterio y realismo mágico que sigue a Felipe Montero, un escritor que acepta un trabajo como editor y traductor para una anciana llamada Consuelo. A medida que trabaja en la casa de Consuelo, se ve inmerso en una trama de secretos, espiritualidad y pasiones inquietantes', 10990, 'Novela', 'Carlos Fuente', 14, false),
-('La vida en movimiento', 'uploads\10laVidaEnMovimiento.jpj', 'La Vida en Movimiento es un libro escrito por Denise Rosenthal, una artista chilena conocida por su música y participación en la industria del entretenimiento. En este libro, Denise comparte sus experiencias y reflexiones sobre la vida, la creatividad y el crecimiento personal, ofreciendo perspectivas inspiradoras.', 5990, 'Novela', 'Denise Rosenthal', 3, true),
-('El Tigre en la casa', 'uploads\12elTigreEnLaCasa.jpg', 'El Tigre en la Casa es un libro escrito por Carl Van Vechten, un novelista y fotógrafo estadounidense. Publicado en 1923, la obra es una historia fascinante sobre la convivencia de Van Vechten con un tigre doméstico llamado Billie en su apartamento de Nueva York. La narración aborda la relación inusual entre el autor y el tigre, así como las observaciones sobre la vida en la ciudad y la naturaleza de los felinos en cautiverio.', 30000, 'Novela', 'Carl Van Vechten', 5, false),
+('La vida en movimiento', 'uploads\12laVidaEnMovimiento.jpg', 'La Vida en Movimiento es un libro escrito por Denise Rosenthal, una artista chilena conocida por su música y participación en la industria del entretenimiento. En este libro, Denise comparte sus experiencias y reflexiones sobre la vida, la creatividad y el crecimiento personal, ofreciendo perspectivas inspiradoras.', 5990, 'Novela', 'Denise Rosenthal', 3, true),
+('El Tigre en la casa', 'uploads\13elTigreEnLaCasa.jpg', 'El Tigre en la Casa es un libro escrito por Carl Van Vechten, un novelista y fotógrafo estadounidense. Publicado en 1923, la obra es una historia fascinante sobre la convivencia de Van Vechten con un tigre doméstico llamado Billie en su apartamento de Nueva York. La narración aborda la relación inusual entre el autor y el tigre, así como las observaciones sobre la vida en la ciudad y la naturaleza de los felinos en cautiverio.', 30000, 'Novela', 'Carl Van Vechten', 5, false),
 ('La gente opina', 'uploads\14laGenteOpina.jpg', 'Inmigrantes, mujeres, indígenas, niños, vegetarianos y la amplia comunidad LGBTI+ son algunos de los personajes que habitan La gente opina, un libro de humor gráfico (y a veces no tanto) que muestra la sociedad de hoy tal y cual es: diversa y llena de matices.', 12990, 'Novela', 'Oyemathias', 6, true),
 ('Conflictos, controversias y disyuntivas', 'uploads\15conflictosControversias.jpg', 'Un elemento nuevo de los conflictos emergentes hoy tiene que ver con las relaciones de poder entre los actores. Asunto que había sido abordado en el espacio cerrado de los expertos y la política, pero que hoy saltan al espacio público con la participación de una multiplicidad de actores que se sienten concernidos y que no aceptan decisiones que no tomen en cuenta su participación. En este contexto, las herramientas clásicas de la «gobernabilidad», se ven desbordadas.', 12990, 'Novela', 'Nicolás Somma, Rodrigro Máquez, Manuel Tironi, Juan Flores', 8, true),
 ('El Arca', 'uploads\16elArca.jpg', 'Existe en los treinta y tres relatos de el arca ese riesgo latente del relato a pedido, conjurado con una gama de propuestas de primer orden, desde el relato alegórico a la humorada paródica, de la fábula fantástica con aliento poético a la parábola pulcra y minimalista, del cuento tradicional que roza anecdóticamente el tema propuesto al cuento fragmentario, ambivalente, incluso cáustico, en donde el animal elegido es casi accesorio.', 12990, 'Novela', 'Cecilia Eudave, Salvador Luis', 8, true),
